@@ -87,7 +87,7 @@
                                 <li><a href="${item.split(',', 2)[0]}">${item.split(',', 2)[1]}</a></li>
                             </g:each>
                         </g:if>
-                        <li class="active">${breadcrumb}</li>
+                        <li class="active">${org.apache.commons.lang.StringEscapeUtils.unescapeHtml(breadcrumb.toString())}</li>
                     </ol>
                 </nav>
             </div>
